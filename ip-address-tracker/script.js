@@ -38,7 +38,7 @@ function handleAPIResponse({ ip, location, isp }) {
       .openPopup();
     setTimeout(() => {
       marker.closePopup();
-    }, 3000);
+    }, 5000);
   } else {
     map.setView([lat, lng], 15);
     marker.remove();
