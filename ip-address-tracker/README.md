@@ -10,8 +10,8 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
     - [The challenge](#the-challenge)
     - [Screenshots](#screenshots)
     - [Links](#links)
-  - [My process](#my-process)
     - [Built with](#built-with)
+    - [Observations](#observations)
 
 ## Overview
 
@@ -36,10 +36,7 @@ Mobile
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- Solution URL: [https://ip-address-tracker-f49c76.netlify.app/](https://ip-address-tracker-f49c76.netlify.app/)
 
 ### Built with
 
@@ -48,3 +45,7 @@ Mobile
 - Flexbox
 - Leaflet
 - IP Geolocation API - ipify.org
+
+### Observations
+
+- Doesn't work with Brave browser and some ad-blockers
