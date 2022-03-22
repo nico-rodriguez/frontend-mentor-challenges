@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 20vh;
+
+  background-image: url('./images/pattern-bg.png');
+  background-size: cover;
+  padding-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+form {
+  width: 70vw;
+
+  display: flex;
+  justify-content: center;
+}
+
+form > * {
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+}
+
+form input {
+  border-right: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  flex-basis: 50%;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+}
+
+.results {
+  position: absolute;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  top: 17vh;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  background-color: white;
+  z-index: 1;
+}
+
+.results > * {
+  width: 25%;
+  min-height: 10vh;
+}
+
+.results > *:nth-child(n + 2)::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  top: 25%;
+  border-right: 1px solid grey;
+}
+
+.results > * > * :nth-child(1) {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.results > * > * :nth-child(2) {
+  margin: 0.5rem;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card:nth-last-child(1) {
+  font-weight: 800;
+}
+
+main {
+  height: 75vh;
+}
+
+#map {
+  height: 100%;
+  z-index: 0;
+}
+
+footer {
+  height: 5vh;
+
+  display: flex;
+  align-items: center;
+}
+
+footer span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    height: 80vh;
+  }
+
+  form {
+    width: 90vw;
+  }
+
+  .results {
+    position: absolute;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    top: 18vh;
+
+    flex-direction: column;
+  }
+
+  .results > * {
+    width: 100%;
+  }
+
+  .results > *:nth-child(n + 2)::before {
+    content: none;
+  }
+
+  .results > * > * :nth-child(1) {
+    margin-top: 0.5rem;
+  }
+
+  .results > * > * :nth-child(2) {
+    margin: 0.3rem;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
