@@ -8,7 +8,13 @@ fetch(baseURL)
   .then((response) => {
     return response.json();
   })
-  .then(handleAPIResponse);
+  .then(handleAPIResponse)
+  .catch((err) => {
+    console.error(err);
+    alert(
+      'Something went wrong. Please disable any ad-blocker or use a different browser.'
+    );
+  });
 
 const form = document.querySelector('form');
 const ipEl = document.querySelectorAll('.ip p')[1];
