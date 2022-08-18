@@ -2,7 +2,7 @@
 
 ## :star2: About the Project
 
-Solutions to the [Frontend Mentor challenges](https://www.frontendmentor.io/challenges) from [Frontend Mentor](https://www.frontendmentor.io).
+Front-end web applications. Solutions to the [Frontend Mentor challenges](https://www.frontendmentor.io/challenges) from [Frontend Mentor](https://www.frontendmentor.io).
 
 ### :gear: Tech Stack
 
